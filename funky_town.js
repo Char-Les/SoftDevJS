@@ -68,10 +68,10 @@ var b = document.getElementById('b');
 b.addEventListener('click', buttonCallBack)
 
 
-// add an event listener to each button for hw 
+// add an event listener to each button for hw and print out corresponding output
 var fib5 = document.getElementById("fib5");
-var gcd2 = document.getElementById("gcdex");
-var rad = document.getElementById("rad");
 fib5.addEventListener('click', function(){console.log(fib(5));});
+var gcd2 = document.getElementById("gcdex");
 gcd2.addEventListener('click', function(){console.log(gcd(9927, 3564));});
+var rad = document.getElementById("rad");
 rad.addEventListener('click', function(){console.log(randomStudent());});
