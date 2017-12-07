@@ -56,3 +56,22 @@ var check = function(){
   }
   return "yay";
 }
+
+// classwork
+var buttonCallBack = function(e){
+  console.log("here comes e ...");
+  console.log(e);
+  console.log("here comes 'this'");
+  console.log(this);
+};
+var b = document.getElementById('b');
+b.addEventListener('click', buttonCallBack)
+
+
+// add an event listener to each button for hw 
+var fib5 = document.getElementById("fib5");
+var gcd2 = document.getElementById("gcdex");
+var rad = document.getElementById("rad");
+fib5.addEventListener('click', function(){console.log(fib(5));});
+gcd2.addEventListener('click', function(){console.log(gcd(9927, 3564));});
+rad.addEventListener('click', function(){console.log(randomStudent());});
